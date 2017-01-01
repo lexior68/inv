@@ -1,61 +1,390 @@
 <!DOCTYPE html>
+<!--
+  Name: InLove - Responsive HTML Wedding Theme
+  Version: 1.0.0
+  Author: _nK
+  Website: http://nkdev.info
+  Purchase: http://themeforest.net/user/_nk/portfolio?ref=_nK
+  Support: http://nk.ticksy.com
+  License: You must have a valid license purchased only from ThemeForest (the above link) in order to legally use the theme for your project.
+  Copyright 2016.
+-->
 <html lang="en">
-	<head> 
-		<meta charset="utf-8"> 
-		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-		<meta name="viewport" content="width=device-width,initial-scale=1"> 
-		<meta name="description" content="Sania &amp; Alex Wedding"> 
-		<meta name="author" content="alex"> 
-			<link rel="icon" href="images/logo.png"> <title>Sania &amp; Alex</title> 
-			<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic"> 
-			<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine:400,700"> 
-			<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"> 
-			<link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css"> 
-			<link rel="stylesheet" href="bower_components/slick.js/slick/slick.css"> 
-			<link rel="stylesheet" href="bower_components/slick.js/slick/slick-theme.css"> 
-			<link rel="stylesheet" href="bower_components/photoswipe/dist/photoswipe.css"> 
-			<link rel="stylesheet" href="bower_components/photoswipe/dist/default-skin/default-skin.css"> 
-			<link rel="stylesheet" href="bower_components/wow/css/libs/animate.css"> 
-			<link rel="stylesheet" href="bower_components/fullpage.js/dist/jquery.fullpage.min.css"> 
-			<link rel="stylesheet" href="css/mimin.min.css"> 
-	</head>
-	<body>
-	<body> 
-		<div class="inlove-preloader inlove-preloader-1"> 
-			<div class="inlove-preloader-heart inlove-preloader-heart-lg"></div>
-			<div class="inlove-couple"> 
-				<div class="inlove-couple-left"><span class="inlove-couple-name">Sania</span> </div>
-				<div class="inlove-couple-and">&amp;</div>
-				<div class="inlove-couple-right"><span class="inlove-couple-name">Alex</span> </div>
+<title>Sania & Alex wedding</title>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="_nK">
+    <link rel="icon" href="images/logo.png">
+    <title>InLove - Responsive HTML Wedding Theme</title>
+    <!-- START: styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine:400,700">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bower_components/slick.js/slick/slick.css">
+    <link rel="stylesheet" href="bower_components/slick.js/slick/slick-theme.css">
+    <link rel="stylesheet" href="bower_components/photoswipe/dist/photoswipe.css">
+    <link rel="stylesheet" href="bower_components/photoswipe/dist/default-skin/default-skin.css">
+    <link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
+    <link rel="stylesheet" href="bower_components/fullpage.js/dist/jquery.fullpage.min.css">
+    <link rel="stylesheet" href="css/inlove.min.css">
+    <!-- END: styles -->
+    <!--[if lt IE 9]>
+      <script src="bower_components/html5shiv/dist/html5shiv.min.js"></script>
+    <![endif]-->
+    <script type="text/JavaScript">
+	//courtesy of BoogieJack.com
+	function killCopy(e){
+	return false
+	}
+	function reEnable(){
+	return true
+	}
+	document.onselectstart=new Function ("return false")
+	if (window.sidebar){
+	document.onmousedown=killCopy
+	document.onclick=reEnable
+	}
+	</script>
+</head>
+
+<body>
+	<div id="snow">
+	</div>
+	
+    <!-- START: preloader 2 -->
+    <div class="inlove-preloader">
+        <!-- http://codepen.io/MarkoD/pen/KdpmYa -->
+        <div class="inlove-preloader-2">
+            <div class="inlove-preloader-heart"></div>
+            <div class="inlove-preloader-heart inlove-preloader-heart-md"></div>
+            <div class="inlove-preloader-heart inlove-preloader-heart-sm"></div>
+        </div>
+    </div>
+    <!-- END: preloader 2 -->
+    <!-- START: Navbar -->
+    <nav class="navbar inlove-navbar navbar-fixed-top inlove-navbar-fixed">
+        <div class="container">
+            <div class="navbar-header">
+                <div class="container">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="In Love">
+                    </a>
+                </div>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse"> 
+				<ul class="nav navbar-nav navbar-center"> 
+					<li><a href="#home" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home</a> </li>
+					<li><a href="#couple" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profile</a> </li>
+					<li><a href="#story" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Our story</a> </li>
+					<li><a href="#event" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Event</a> </li>
+					<li><a href="#gallery" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gallery</a> </li>
+					<li><a href="#travel" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Travel Info</a> </li>
+					<li><a href="#accomodation" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Accomodation Info</a> </li>
+					</li>
+				</ul> 
 			</div>
-		</div>
-		
-		<div class="inlove-header inlove-section-with-bg"> 
-		<div class="involve-header-image"></div>
-		<div class="container inlove-404"> 
-		<div class="row"> 
-			<div class="col-md-8 col-md-offset-2"> 
-				<div class="inlove-box"> <h1 class="inlove-heading wow fadeIn">You're Invited!</h1> 
-					<div class="inlove-heading-divider"><i></i> </div>
-					<div class="text-center inlove-smooth-scroll"><a class="btn btn-primary active" href="en/">English</a> &nbsp;<a class="btn btn-info active" href="id/">Bahasa Indonesia</a> </div>
-				</div>
-			</div>
-		</div>
-		</div>
-		<script src="bower_components/jquery/dist/jquery.min.js"></script> 
-		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script> 
-		<script src="bower_components/jarallax/jarallax/jarallax.js"></script> 
-		<script src="bower_components/jarallax/jarallax/jarallax-video.js"></script> 
-		<script src="bower_components/slick.js/slick/slick.min.js"></script> 
-		<script src="bower_components/isotope/dist/isotope.pkgd.min.js"></script> 
-		<script src="bower_components/photoswipe/dist/photoswipe.min.js"></script> 
-		<script src="bower_components/photoswipe/dist/photoswipe-ui-default.min.js"></script> 
-		<script src="bower_components/theia-sticky-sidebar/js/theia-sticky-sidebar.js"></script> 
-		<script src="bower_components/smoothscroll-for-websites/SmoothScroll.js"></script> 
-		<script src="bower_components/wow/dist/wow.min.js"></script> 
-		<script src="bower_components/jquery.countdown/dist/jquery.countdown.min.js"></script> 
-		<script src="bower_components/fullpage.js/dist/jquery.fullpage.min.js"></script> 
-		<script src="js/inlove.min.js"></script> 
-		<script>if (typeof inlove !=='undefined'){inlove.init();} $(function(){$(this).bind("contextmenu", function(e){e.preventDefault();});});</script>
-	</body>
+        </div>
+    </nav>
+	
+    <!-- END: Navbar -->
+    <!-- START: header + image -->
+    <div class="inlove-header" id="home">
+        <!-- Background image -->
+        <div class="involve-header-image" style="background-image: url('images/hero-1.jpg')"></div>
+        <!-- Overlay with logo -->
+        <div class="inlove-header-overlay"><img src="images/logo-big.png" alt="Sania &amp; Alex">
+        </div>
+        <!-- Scroll down button -->
+        <a href="#" class="inlove-scroll-btn"></a>
+    </div>
+    <!-- END: header + image -->
+    <!-- START: Countdown -->
+    <div class="inlove-section inlove-section-with-bg">
+        <div class="inlove-countdown" data-countdown-end="07/16/2017"></div>
+    </div>
+    <!-- END: Countdown -->
+    <!-- START: couple -->
+    <div class="inlove-couple" id="couple">
+        <div class="inlove-couple-left wow fadeIn" style="background-image: url('images/she.jpg')"><span class="inlove-couple-name">Sania</span>
+        </div>
+        <div class="inlove-couple-and">&amp;</div>
+        <div class="inlove-couple-right wow fadeIn" style="background-image: url('images/he.jpg')"><span class="inlove-couple-name">Alex</span>
+        </div>
+    </div>
+    <!-- END: couple -->
+    <!-- START: Profile -->
+    <div class="inlove-section">
+        <div class="container">
+            <div class="row vertical-gutter">
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-xs-10 col-xs-offset-1">
+                            <div class="wow fadeIn">
+                                <h2 class="inlove-heading">Sania</h2>
+                                <div class="inlove-heading-divider"><i></i>
+                                </div>
+                                <div>
+                                    <p>Malesuada tempus non ante netus diam pulvinar. Purus ridiculus. Nisi. Cras. Ipsum sed urna molestie sed proin malesuada. Hymenaeos dapibus nec facilisis taciti vestibulum.</p>
+                                    <p>Vulputate lorem, consequat pede. Tempus porta nascetur mauris auctor consectetuer taciti eros pede aliquam netus magna Felis enim. Feugiat lacinia senectus ac facilisis velit netus nisi.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-xs-10 col-xs-offset-1">
+                            <div class="wow fadeIn">
+                                <h2 class="inlove-heading">Alex</h2>
+                                <div class="inlove-heading-divider"><i></i>
+                                </div>
+                                <div>
+                                    <p>Adipiscing inceptos facilisis gravida ipsum fames montes auctor primis sapien vestibulum nulla natoque massa arcu faucibus parturient eleifend natoque inceptos turpis Donec. Platea praesent.</p>
+                                    <p>Rutrum vivamus nunc nibh, habitant inceptos rhoncus elementum. Amet ornare fusce fermentum suscipit diam facilisi lectus aliquet orci. Sit cursus. Lorem velit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END: Profile -->
+    <!-- START: Story -->
+    <div class="inlove-section inlove-section-with-bg" id="story">
+        <div class="container">
+            <h2 class="inlove-heading wow fadeIn">Our Story</h2>
+            <div class="inlove-heading-divider"><i></i>
+            </div>
+            <h4 class="inlove-sub-heading wow fadeIn">Ini halaman our story</h4>
+            <div class="text-center wow fadeIn">
+                <a href="#"><img src="images/logo-nu-full.png" alt="" height="80" width="80">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- END: story -->
+    <!-- START: Events -->
+    <div class="inlove-section" id="event">
+        <div class="container">
+            <h1 class="inlove-heading wow fadeIn">Events</h1>
+            <div class="inlove-heading-divider"><i></i>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
+                    <div class="row vertical-gutter">
+					<div align="center"><img src="images/party-600x800.jpg" alt="Ceremony" height="400" width="300">
+					</div>
+					<p>
+					<div align="center">
+						<font face="Lora, sans-serif" size="4"  color="#5AD4B8"><strong> Raffles Grand Ballroom, Mall Balekota, Tangerang </strong></font>
+					</div>
+					<div align="center">
+						<font face="Lora, sans-serif" size="2" align="center" color="#333"><strong> Jl. Jendral Soedirman, Buaran Indah, Tangerang - Banten </strong></font>
+					</div>
+					<p><br>
+					<div align="center">
+						<font face="Lora, sans-serif" size="4" align="center" color="#5AD4B8"><strong> 16 July 2017 </strong></font>
+					</div>
+					</div>
+					<p>
+					<br>
+					<p>
+						<div class="col-sm-6">
+                            <div class="inlove-image-box wow fadeIn">
+                                <h3 class="inlove-image-box-title">Ceremony</h3>
+                                <h4 class="inlove-image-box-sub-title"><strong>16:00 - end</strong></h4>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="inlove-image-box wow fadeIn">
+                                <h3 class="inlove-image-box-title">Party</h3>
+                                <h4 class="inlove-image-box-sub-title"><strong>19:00 - 21:00</strong></h4>
+                            </div>
+                        </div>
+                        <div>
+                        	<h2 class="inlove-heading"><br></h2> 
+							<h3 class="inlove-sub-heading"><br/>Google map coordinate: 
+							<a href="https://www.google.co.kr/maps/place/6%C2%B010'47.3%22S+106%C2%B038'34.0%22E/@-6.1793777,106.6436194,17.75z/data=!4m5!3m4!1s0x0:0x0!8m2!3d-6.179806!4d106.642778" 
+							target="_blank">-6.179806, 106.642778</a></h3> 
+                        </div>
+                    </div>
+                    <div>
+							<div id="google-map" class="inlove-gmaps"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END: Events -->
+    <!-- START: Gallery -->
+    <div class="inlove-section inlove-section-with-bg" id="gallery">
+        <div class="container">
+            <h2 class="inlove-heading wow fadeIn">Photos</h2>
+            <div class="inlove-heading-divider"><i></i>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <div class="photoswipe-gallery isotope row vertical-gutter">
+                        <div class="item col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1" data-filter="bride">
+                            <a class="inlove-effect wow fadeIn" href="images/gallery-1-600x863.jpg" data-size="1280x1840"><img src="images/gallery-1-600x863.jpg" alt=""> <span class="inlove-image-icon"><i class="fa fa-search-plus"></i></span>
+                            </a>
+                        </div>
+                        <div class="item col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1" data-filter="together">
+                            <a class="inlove-effect wow fadeIn" href="images/gallery-2-600x400.jpg" data-size="1600x1067"><img src="images/gallery-2-600x400.jpg" alt=""> <span class="inlove-image-icon"><i class="fa fa-search-plus"></i></span>
+                            </a>
+                        </div>
+                        <div class="item col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1" data-filter="together">
+                            <a class="inlove-effect wow fadeIn" href="images/gallery-3-600x400.jpg" data-size="1600x1067"><img src="images/gallery-3-600x400.jpg" alt=""> <span class="inlove-image-icon"><i class="fa fa-search-plus"></i></span>
+                            </a>
+                        </div>
+                        <div class="item col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1" data-filter="together">
+                            <a class="inlove-effect wow fadeIn" href="images/gallery-4-600x400.jpg.jpg" data-size="1600x1067"><img src="images/gallery-4-600x400.jpg" alt=""> <span class="inlove-image-icon"><i class="fa fa-search-plus"></i></span>
+                            </a>
+                        </div>
+                        <div class="item col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1" data-filter="groom">
+                            <a class="inlove-effect wow fadeIn" href="images/gallery-9-600x863.jpg.jpg" data-size="1280x1840"><img src="images/gallery-9-600x863.jpg" alt=""> <span class="inlove-image-icon"><i class="fa fa-search-plus"></i></span>
+                            </a>
+                        </div>
+                        <div class="item col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1" data-filter="together">
+                            <a class="inlove-effect wow fadeIn" href="images/gallery-5-600x400.jpg" data-size="1600x1067"><img src="images/gallery-5-600x400.jpg" alt=""> <span class="inlove-image-icon"><i class="fa fa-search-plus"></i></span>
+                            </a>
+                        </div>
+                        <div class="item col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1" data-filter="bride">
+                            <a class="inlove-effect wow fadeIn" href="images/gallery-6-600x400.jpg" data-size="1600x1067"><img src="images/gallery-6-600x400.jpg" alt=""> <span class="inlove-image-icon"><i class="fa fa-search-plus"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END: Gallery -->
+    <!-- START: transport -->
+    <div class="inlove-section" id="travel">
+        <div class="container">
+            <h2 class="inlove-heading wow fadeIn">Travel Info</h2>
+            <div class="inlove-heading-divider"><i></i>
+            </div>
+            <div class="inlove-wishes slick-slider wow fadeIn">
+                <div class="inlove-wish">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3"><img class="inlove-wish-author-photo" src="images/user-1.jpg" alt="Carolyn Caldwell">
+                            <div class="inlove-wish-author-name">Carolyn Caldwell</div>
+                            <blockquote>Love one another and you will be happy. It’s as simple, and as difficult, as that!</blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="inlove-wish">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3"><img class="inlove-wish-author-photo" src="images/user-2.jpg" alt="Julie Hicks">
+                            <div class="inlove-wish-author-name">Julie Hicks</div>
+                            <blockquote>Wishing you the best, but don’t smother each other. Nothing can grow in the shade.</blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="inlove-wish">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3"><img class="inlove-wish-author-photo" src="images/user-3.jpg" alt="Rodney Lowe">
+                            <div class="inlove-wish-author-name">Rodney Lowe</div>
+                            <blockquote>Wishing you all the health and happiness in the world on your wedding.</blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="inlove-wish">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3"><img class="inlove-wish-author-photo" src="images/user-4.jpg" alt="Ritthy Fisher">
+                            <div class="inlove-wish-author-name">Ritthy Fisher</div>
+                            <blockquote>Enjoy your time together, and bring on the babies!</blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END: Transport -->
+    <!-- START: Akomodasi -->
+    <div class="inlove-section inlove-section-with-bg" id="accomodation">
+        <div class="container">
+            <h2 class="inlove-heading wow fadeIn">Accomodation Info</h2>
+            <div class="inlove-heading-divider"><i></i>
+            </div>
+            <h4 class="inlove-sub-heading wow fadeIn">Ini halaman akomodasi</h4>
+            <div class="text-center wow fadeIn">
+                <a href="#"><img src="images/logo-nu-full.png" alt="" height="80" width="80">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- END: Akomodasi -->
+    <!-- START: Hormat Kami -->
+    <div class="inlove-section">
+        <div class="container">
+            <h2 class="inlove-heading wow fadeIn">Thank you</h2>
+            <div class="inlove-heading-divider"><i></i>
+            </div>
+            <h4 class="inlove-sub-heading wow fadeIn">Best wishes</h4>
+            <div class="text-center wow fadeIn">
+                <a href="#"><img src="images/logo-nu-full.png" alt="" height="80" width="80">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- END: Gift Registry -->
+    <!-- START: footer -->
+    <footer class="inlove-footer inlove-footer-dark">
+        <div class="container">
+            <div class="inlove-footer-widgets">
+                <div class="row vertical-gutter multi-columns-row">                   
+                </div>
+            </div>
+            <div class="inlove-footer-copyright wow fadeIn"><em>InLove &copy; 2017 — Sania & Alex</em>
+            </div>
+        </div>
+    </footer>
+    <!-- END: footer -->
+    <!-- START: scripts -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/jarallax/jarallax/jarallax.js"></script>
+    <script src="bower_components/jarallax/jarallax/jarallax-video.js"></script>
+    <script src="bower_components/slick.js/slick/slick.min.js"></script>
+    <script src="bower_components/isotope/dist/isotope.pkgd.min.js"></script>
+    <script src="bower_components/photoswipe/dist/photoswipe.min.js"></script>
+    <script src="bower_components/photoswipe/dist/photoswipe-ui-default.min.js"></script>
+    <script src="bower_components/theia-sticky-sidebar/js/theia-sticky-sidebar.js"></script>
+    <script src="bower_components/smoothscroll-for-websites/SmoothScroll.js"></script>
+    <script src="bower_components/wow/dist/wow.min.js"></script>
+    <script src="bower_components/jquery.countdown/dist/jquery.countdown.min.js"></script>
+    <script src="bower_components/fullpage.js/dist/jquery.fullpage.min.js"></script>
+    <script src="js/inlove.min.js"></script>
+    <script>if (typeof inlove !=='undefined'){inlove.init();}</script> 
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6pLgy2XIJM-2ZmGzKeBL3-FPW26sjer0"></script> 
+		<script>
+			function initializeGmaps()
+				{var e={lat: -6.179806, lng: 106.642778}, o={lat: -6.179806, lng: 106.642778}, n={lat: -6.179806, lng: 106.642778}, a=document.getElementById("google-map"), 
+				i={center: e, scrollwheel: !1, zoom:17, mapTypeId: google.maps.MapTypeId.ROADMAP, backgroundColor: "none", styles: [{stylers: [{hue: "#A3CCFF"},{saturation: 0},{lightness: 50},{visibility: "simplified"}]}]}, 
+				l=new google.maps.Map(a, i), g=new google.maps.Marker({position: o, map: l, icon: "../images/marker-1.png"}), t=new google.maps.Marker({position: n, map: l, icon: "../images/marker-2.png"}), 
+				p=new google.maps.InfoWindow({content: ""}); p.open(l, g), google.maps.event.addListener(g, "click", 
+				function(){p.open(l, g)}); var s=new google.maps.InfoWindow({content: "Venue"}); s.open(l, t), google.maps.event.addListener(t, "click", 
+				function(){s.open(l, t)})}google.maps.event.addDomListener(window, "load", initializeGmaps); $(function(){$(this).bind("contextmenu", function(e){e.preventDefault();});}); 
+		</script>
+    <!-- END: scripts -->
+    <!-- START: init inlove -->
+    <script>
+        if (typeof inlove !== 'undefined') {
+            inlove.init();
+        }
+    </script>
+    <!-- END: init inlove -->
+	<script type="text/javascript">
+
+</body>
+
 </html>
